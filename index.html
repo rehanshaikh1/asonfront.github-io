@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    *{
+      font-family: "Roboto", Sans-serif;
+    }
+    #hero {
+      width: 100%;
+      height: 90vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(https://images.pexels.com/photos/462331/pexels-photo-462331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+      background-size: cover;
+      background-position: center;
+    }
+    .container-custom {
+      max-width: 920px;
+    }
+    .object-fit-cover {
+      object-fit: cover !important;
+    }
+    header {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 20px 0;
+    }
+    header a {
+      color: #fff !important;
+    }
+    .search-option {
+      margin-top: -100px;
+      z-index: 1111;
+    }
+    .search-option ul li a {
+      background-color: #d51500 !important;
+      color: #fff !important;
+      padding: 10px 21px 10px 25px;
+      margin: 0px 1px 0px 1px;
+    }
+    .search-option ul li a.active {
+      color: #333 !important;
+      background-color: #fff !important;
+    }
+    .smartboard {
+      background-color: #f4f5f6;
+      padding: 50px;
+    }
+    .billenquiry{
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+      background-size: cover;
+    }
+    .billenquiry form{
+      background-color: #fff;
+      padding: 50px;
+    }
+    .billenquiry  input{
+      padding: 6px 16px !important;
+      border-radius: 1px;
+      margin: 10px 0;
+    }
+    .billenquiry  select{
+      padding: 6px 16px !important;
+      border-radius: 1px;
+      margin: 10px 0;
+    }
+    .billenquiry .conn{
+      margin: 100px 0;
+    }
+    .billenquiry .conn p{
+      line-height: 2;
+    }
+    .billenquiry .conn::after{
+       content: '';
+       display: block;
+       width: 70px;
+       height: 2px;
+       margin-bottom: 10px;
+       background-color: rgba(255, 255, 255, 0.35);
+    }
+    .top-cities img{
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+    footer{
+      background-color: #2a323d;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AdSense</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section
+      class="hero d-flex justify-content-center align-items-center"
+      id="hero"
+    >
+      <div class="content text-center text-white">
+        <div class="w-50 mx-auto">
+          <h1>Welcome To AdSense</h1>
+          Book My Billboards is an Online Marketplace for Billboard Advertising.
+          Programmatic Marketplace for Executing Location-Based Out-of-home
+          (OOH) Advertising at Cost-Efficient Scale, Delivering Best in Market
+          Automation and Performance. Servicing for the Outdoor Media & DOOH
+          Marketplace,
+        </div>
+      </div>
+    </section>
+    <section class="search-option">
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="pill" href="#home"
+            >Out-of-Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu1"
+            >Buy Ad-space</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu2">For Sale</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content bg-white">
+        <div class="tab-pane active" id="home">
+          <div class="container-fluid">
+            <div class="row shadow mx-2 py-5 px-4">
+              <div class="col-3">
+                <label for="">Billboard Location</label>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search for Billboard Location"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text h-100" id="basic-addon1"
+                      ><i class="fa-solid fa-location-crosshairs"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <label for=""> OOH Media Type </label>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Media Type"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text h-100" id="basic-addon1"
+                      ><i class="fa-solid fa-chevron-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <label for="">Your budget </label>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Max Cost"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text h-100" id="basic-addon1"
+                      ><i class="fa-solid fa-chevron-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <label for=""></label>
+                <div class="mb-3">
+                  <button class="btn btn-block btn-danger w-100">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="menu1">
+          <div class="container-fluid">
+            <div class="row shadow mx-2 py-5 px-4">
+              <div class="col-3">
+                <label for="">Billboard Location</label>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search for Billboard Location"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text h-100" id="basic-addon1"
+                      ><i class="fa-solid fa-location-crosshairs"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <label for=""> OOH Media Type </label>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Media Type"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text h-100" id="basic-addon1"
+                      ><i class="fa-solid fa-chevron-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <label for="">Your budget </label>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Max Cost"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text h-100" id="basic-addon1"
+                      ><i class="fa-solid fa-chevron-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <label for=""></label>
+                <div class="mb-3">
+                  <button class="btn btn-block btn-danger w-100">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="menu2">
+          <div class="container-fluid">
+            <div class="row shadow mx-2 py-5 px-4">
+              <div class="col-3">
+                <label for="">Billboard Location</label>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search for Billboard Location"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text h-100" id="basic-addon1"
+                      ><i class="fa-solid fa-location-crosshairs"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <label for=""> OOH Media Type </label>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Media Type"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text h-100" id="basic-addon1"
+                      ><i class="fa-solid fa-chevron-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <label for="">Your budget </label>
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Max Cost"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text h-100" id="basic-addon1"
+                      ><i class="fa-solid fa-chevron-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <label for=""></label>
+                <div class="mb-3">
+                  <button class="btn btn-block btn-danger w-100">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="smartboard" id="smartboard">
+      <div class="container">
+        <div class="title text-center">
+          <h3>Smarter Billboard Advertising</h3>
+          <p>
+            Billboard online lets you find and buy any available outdoor
+            advertising space like Hoardings, Unipole sign, and bus shelter ads
+            across the globe.
+          </p>
+        </div>
+        <div class="owl-carousel owl-theme mt-5">
+          <div class="item">
+            <div class="card w-100">
+              <img
+                src="https://bookmybillboards.com/wp-content/uploads/2017/08/unipole.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="item-title fw-normal mb-0">
+                  <a
+                    class="text-decoration-none text-dark"
+                    href="https://bookmybillboards.com/billboard-advertising/john-f-kennedy-blvd-new-york/"
+                    tabindex="0"
+                    >John F. Kennedy Blvd, New York</a
+                  >
+                </h6>
+                <span class="small fw-light d-block pt-2 pb-3"
+                  >Delhi Noida Direct Flight</span
+                >
+                <span class="small fw-light d-block pb-4">40 20 800</span>
+                <span class="small fw-normal d-block pb-0"
+                  >UNIPOLES / MONOPOLES</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card w-100">
+              <img
+                src="https://bookmybillboards.com/wp-content/uploads/2017/08/unipole.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="item-title fw-normal mb-0">
+                  <a
+                    class="text-decoration-none text-dark"
+                    href="https://bookmybillboards.com/billboard-advertising/john-f-kennedy-blvd-new-york/"
+                    tabindex="0"
+                    >John F. Kennedy Blvd, New York</a
+                  >
+                </h6>
+                <span class="small fw-light d-block pt-2 pb-3"
+                  >Delhi Noida Direct Flight</span
+                >
+                <span class="small fw-light d-block pb-4">40 20 800</span>
+                <span class="small fw-normal d-block pb-0"
+                  >UNIPOLES / MONOPOLES</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card w-100">
+              <img
+                src="https://bookmybillboards.com/wp-content/uploads/2017/08/unipole.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="item-title fw-normal mb-0">
+                  <a
+                    class="text-decoration-none text-dark"
+                    href="https://bookmybillboards.com/billboard-advertising/john-f-kennedy-blvd-new-york/"
+                    tabindex="0"
+                    >John F. Kennedy Blvd, New York</a
+                  >
+                </h6>
+                <span class="small fw-light d-block pt-2 pb-3"
+                  >Delhi Noida Direct Flight</span
+                >
+                <span class="small fw-light d-block pb-4">40 20 800</span>
+                <span class="small fw-normal d-block pb-0"
+                  >UNIPOLES / MONOPOLES</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card w-100">
+              <img
+                src="https://bookmybillboards.com/wp-content/uploads/2017/08/unipole.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="item-title fw-normal mb-0">
+                  <a
+                    class="text-decoration-none text-dark"
+                    href="https://bookmybillboards.com/billboard-advertising/john-f-kennedy-blvd-new-york/"
+                    tabindex="0"
+                    >John F. Kennedy Blvd, New York</a
+                  >
+                </h6>
+                <span class="small fw-light d-block pt-2 pb-3"
+                  >Delhi Noida Direct Flight</span
+                >
+                <span class="small fw-light d-block pb-4">40 20 800</span>
+                <span class="small fw-normal d-block pb-0"
+                  >UNIPOLES / MONOPOLES</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card w-100">
+              <img
+                src="https://bookmybillboards.com/wp-content/uploads/2017/08/unipole.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="item-title fw-normal mb-0">
+                  <a
+                    class="text-decoration-none text-dark"
+                    href="https://bookmybillboards.com/billboard-advertising/john-f-kennedy-blvd-new-york/"
+                    tabindex="0"
+                    >John F. Kennedy Blvd, New York</a
+                  >
+                </h6>
+                <span class="small fw-light d-block pt-2 pb-3"
+                  >Delhi Noida Direct Flight</span
+                >
+                <span class="small fw-light d-block pb-4">40 20 800</span>
+                <span class="small fw-normal d-block pb-0"
+                  >UNIPOLES / MONOPOLES</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card w-100">
+              <img
+                src="https://bookmybillboards.com/wp-content/uploads/2017/08/unipole.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="item-title fw-normal mb-0">
+                  <a
+                    class="text-decoration-none text-dark"
+                    href="https://bookmybillboards.com/billboard-advertising/john-f-kennedy-blvd-new-york/"
+                    tabindex="0"
+                    >John F. Kennedy Blvd, New York</a
+                  >
+                </h6>
+                <span class="small fw-light d-block pt-2 pb-3"
+                  >Delhi Noida Direct Flight</span
+                >
+                <span class="small fw-light d-block pb-4">40 20 800</span>
+                <span class="small fw-normal d-block pb-0"
+                  >UNIPOLES / MONOPOLES</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="billtypes" id="billtypes">
+      <div class="container-custom mx-auto p-5">
+        <div class="row d-flex">
+          <div class="col-4 d-flex flex-column">
+            <div class="">
+              <h3>Traditional Billboards</h3>
+              <p class="pt-3 mb-0">
+                Traditional billboards are often seen on major roads and smaller
+                streets in all Cities. Buy traditional billboard space online.
+              </p>
+            </div>
+            <img
+              src="https://bookmybillboards.com/wp-content/uploads/2020/11/Digital-Billboard-2.jpg"
+              class="img-fluid object-fit-cover border my-auto"
+              style="filter: grayscale(0.5)"
+              alt=""
+            />
+            <div class="">
+              <h3>Traditional Billboards</h3>
+              <p class="pt-3">
+                Traditional billboards are often seen on major roads and smaller
+                streets in all Cities. Buy traditional billboard space online.
+              </p>
+            </div>
+          </div>
+          <div class="col-4 d-flex flex-column">
+            <img
+              src="https://bookmybillboards.com/wp-content/uploads/2020/11/outofhome-world-online-booking.jpg"
+              class="h-100 w-100 object-fit-cover"
+              alt=""
+            />
+            <img
+              src="https://bookmybillboards.com/wp-content/uploads/2020/11/Digital-Billboard-3-1.jpg"
+              class="w-100 h-100 object-fit-cover mt-3"
+              alt=""
+            />
+          </div>
+          <div class="col-4 d-flex flex-column">
+            <img
+              src="https://bookmybillboards.com/wp-content/uploads/2020/11/Products-Collage4.jpg"
+              class="w-100 h-100 object-fit-cover mb-auto"
+              alt=""
+            />
+            <img
+              src="https://bookmybillboards.com/wp-content/uploads/2020/11/BILLBOARD-ONLINE.jpg"
+              class="w-100 h-100 object-fit-cover my-3"
+              alt=""
+            />
+            <img
+              src="https://bookmybillboards.com/wp-content/uploads/2020/11/AIRPORT-ADVERTISING.jpg"
+              class="w-100 h-100 object-fit-cover"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="billenquiry" id="billenquiry">
+      <div class="container p-5">
+        <div class="row py-5">
+          <div class="col-7 text-white">
+            <div class="row">
+              <div class="col-6">
+                <div class="conn">
+                  <h4>01</h4>
+                  <h4>Worlds First Billboard marketplace Mobile APP</h4>
+                  <p>
+                    Transforming the out-of-home industry through our
+                    technology.
+                  </p>
+                </div>
+                <div class="conn">
+                  <h4>02</h4>
+                  <h4>Worlds First Billboard marketplace Mobile APP</h4>
+                  <p>
+                    Transforming the out-of-home industry through our
+                    technology.
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="conn">
+                  <h4>03</h4>
+                  <h4>Worlds First Billboard marketplace Mobile APP</h4>
+                  <p>
+                    Transforming the out-of-home industry through our
+                    technology.
+                  </p>
+                </div>
+                <div class="conn">
+                  <h4>04</h4>
+                  <h4>Worlds First Billboard marketplace Mobile APP</h4>
+                  <p>
+                    Transforming the out-of-home industry through our
+                    technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <form>
+              <h3>Billboard Inquiry Form </h3>
+              <h5 class="fw-light">Contact Us, We Would Be Happy To Assist You</h5>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email Addrress">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="">
+                    Location
+                    </label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="City Name ">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="">
+                    
+                    </label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Zip Code ">
+                </div>
+
+
+                <div class="form-group col-md-12">
+                  <label for="">
+                    Outdoor Media Type
+
+                    </label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-6">
+                 
+                  <input type="email" class="form-control" id="inputEmail4" placeholder=" Max Price ">
+                </div>
+
+                <div class="form-group col-md-6">
+                  
+                  <input type="email" class="form-control" id="inputEmail4" placeholder=" Board Size ">
+                </div>
+                
+              </div>
+             
+              <button type="submit" class="btn btn-primary d-block w-100 mt-3 bg-danger">Sign in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="top-cities py-5 " id="top-cities">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 d-flex flex-column justify-content-center">
+            <h3>
+              Explore Top Cities
+              </h3>
+              <p>
+
+                Use billions of location-based Out-of-home (OOH) advertising to let our Media Owners Effectively Connect to New Markets.
+                </p>
+          </div>
+          <div class="col-2">
+            <img src="https://bookmybillboards.com/wp-content/uploads/2020/11/billboard-in-delhi.jpg" alt="">
+          </div>
+          <div class="col-2">
+            <img src="https://bookmybillboards.com/wp-content/uploads/2020/11/billboard-in-delhi.jpg" alt="">
+
+          </div>
+          <div class="col-2">            <img src="https://bookmybillboards.com/wp-content/uploads/2020/11/billboard-in-delhi.jpg" alt="">
+          </div>
+          <div class="col-2">            <img src="https://bookmybillboards.com/wp-content/uploads/2020/11/billboard-in-delhi.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container p-5">
+        <div class="row pt-5">
+          <div class="col-3">
+            <div class="sec">
+              <h5 class="fw-normal">About Site</h5>
+              <p class="py-3 fw-light">
+                Bookmybillboards is a programmatic online marketplace for Out-of-home (OOH) advertising. Its connect advertisers to billboards, at any price point; to make buyers and sellers live better and simpler.
+                </p>
+                <a href="" class="text-decoration-none text-white">Read More</a>
+            </div>
+            <div class="sec mt-5">
+              <h5 class="fw-normal">Top Billboard Markets in India:</h5>
+              <p class=" fw-light">
+                Billboards in Delhi | Billboards in Mumbai
+                </p>
+                <p class=" fw-light">
+                  Billboards in Hyderabad | Billboards in Bangalore
+                  </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="sec">
+              <h5 class="fw-normal">Contact Us</h5>
+              <p class="pt-3 pb-1 fw-light"><i class="fa-solid fa-location"></i> USA - 19 Holly, Cove , Kent County, DE INDIA - Srinagar Colony, Hyderabad, TG</p>
+              <p class="pb-1 fw-light"><i class="fa-solid fa-phone"></i> +1(646) 5687769 +91 40 4024 5667 </p>
+              <p class="pb-1 fw-light"><i class="fa-solid fa-phone"></i>  +1(914) 3521054 </p>
+              <p class="pb-1 fw-light"><i class="fa-solid fa-envelope"></i>   info@bookmybillboards.com </p>
+
+            </div>
+            <div class="sec mt-5">
+              <h5 class="fw-normal"> Contact us </h5>
+              <p class="fw-light">	
+
+                Billboards in Hyderabad | Billboards in Bangalore
+                </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="sec">
+              <h5 class="fw-normal">
+                Download Our Apps
+              </h5>
+              <img src="https://bookmybillboards.com/wp-content/uploads/2017/07/google.png" width="100px" alt="">
+              <img src="https://bookmybillboards.com/wp-content/uploads/2017/07/iphone.png" alt="" width="100px">
+              <img src="https://bookmybillboards.com/wp-content/uploads/2017/07/widnows.png" alt="" width="100px">
+            </div>
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          ltr: true,
+          loop: false,
+          margin: 30,
+          nav: true,
+          navText: ["Prev", "Next"],
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
